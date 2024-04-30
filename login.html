@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css" />
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-social.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-payments.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-vendors.rtl.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/font.css">
+</head>
+<body class="d-flex flex-column bg-white">
+  <div class="row g-0 flex-fill">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <div class="container container-tight my-5 px-md-5">
+        <div class="d-block d-md-none text-center mb-6">
+          <img src="src/img/logo.svg" class="w-50" alt="Jadir">
+        </div>
+        <form action="login.html" method="post" class="w-md-75" id="loginForm">
+          <div class="row">
+            <div class="col text-start">
+              <h2 class="fw-bold">تسجيل دخول</h2>
+            </div>
+            <div class="col text-end">
+              <a href="#" class="text-decoration-none fw-bold">
+                <span>ENG</span>
+                <i class="ti ti-world"></i>
+              </a>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="name@example.com" autocomplete="off" />
+          </div>
+  
+          <div class="mb-3">
+            <label class="form-label">كلمة المرور</label>
+            <div class="input-group input-group-flat shadow-sm">
+              <input type="password" class="form-control" placeholder="كلمة المرور" autocomplete="off" />
+              <span class="input-group-text">
+                <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          
+          <span class="form-label-description">
+            <a href="./forgot-password.html">نسيت كلمة المرور</a>
+          </span>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">تذكرني</label>
+          </div>
+
+          <div class="d-grid">
+            <!-- <input type="submit" class="btn btn-primary" value="تسجيل دخول"> -->
+            <a href="dashboard.html" class="btn btn-primary">تسجيل دخول</a>
+          </div>
+
+          <div class="text-center text-muted mt-3">
+            ليس لديك حساب مسبق؟ <a href="registration.html" tabindex="-1">انشئ حساب جديد</a>
+          </div>
+  
+        </form>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-none d-md-flex flex-column justify-content-center bg-cover bg-primary">
+      <div class="container container-tight text-center my-5 px-md-5">
+        <img src="src/img/light-logo.svg" class="w-75" alt="Jadir">
+      </div>
+    </div>
+  </div>
+    
+  <script src="src/js/bootstrap.bundle.min.js"></script>
+</body>

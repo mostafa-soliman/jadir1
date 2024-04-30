@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع عميل | جدير</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css">
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/css/font.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="border-0 navbar navbar-expand-lg navbar-light shadow-sm" aria-label="Offcanvas navbar large">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="src/images/logo.svg" alt="موقع عميل | جدير" height="30">
+                </a>
+              <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <i class="ti ti-menu"></i>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">القائمة</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="ms-0 ms-md-auto offcanvas-body">
+                  <ul class="d-block d-md-flex justify-content-end navbar-nav pe-0 pe-md-2">
+                    <li class="nav-item">
+                      <a class="active justify-content-start nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="justify-content-start nav-link" href="single-page.html">صفحة</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="justify-content-start nav-link" href="single-page.html">صفحة</a>
+                    </li>
+                    <li class="d-grid py-2">
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-report">دخول | تسجيل جديد</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                <symbol id="check2" viewBox="0 0 16 16">
+                  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+                </symbol>
+                <symbol id="circle-half" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                </symbol>
+                <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                  <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                </symbol>
+                <symbol id="sun-fill" viewBox="0 0 16 16">
+                  <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                </symbol>
+              </svg>
+              <div class="dropdown bd-mode-toggle border-0 rounded-0 ms-2">
+                <button class="align-items-center border-0 btn d-flex dropdown-toggle p-0 shadow-none" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+                  <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                      مضيئ
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                      مظلم
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                      <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                      تلقائي
+                      <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <section id="hero" class="align-content-center bg-primary d-grid position-relative" style="background-image: url('https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg')">
+            <div class="overlay"></div>
+            <div class="container h-full z-1">
+                <h1 class="text-white">عنوان تسويقي</h1>
+                <p class="text-white">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                <a class="btn btn-primary" href="#">صفحة</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="" class="h-30vh align-content-center d-grid position-relative">
+            <div class="container h-full z-1">
+                <h1 class="mb-3">الخدمات اليومية</h1>
+                <!-- Slider main container -->
+                <div class="swiper swiper-1">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-book"></i>
+                                    <h3 class="mt-3">القرآن الكريم</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-clock-hour-4"></i>
+                                    <h3 class="mt-3">أوقات الصلاة</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-cash"></i>
+                                    <h3 class="mt-3">منصة التبرعات</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-calendar"></i>
+                                    <h3 class="mt-3">التقويم الهجري</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-message"></i>
+                                    <h3 class="mt-3">الأذكار</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#" class="card">
+                                <div class="card-body p-2 p-md-4 text-center">
+                                    <i class="ti ti-map-pin"></i>
+                                    <h3 class="mt-3">نقاط توزيع زمزم</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="h-sm-90vh h-md-30vh align-content-center d-grid position-relative">
+            <div class="container h-full z-1">
+                <div class="align-items-center d-flex flex-row justify-content-between mb-3">
+                    <h1 class="m-0">المسابقات</h1>
+                    <a href="#" class="link-secondary">المزيد</a>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper swiper-2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-between card-body d-grid h-100 p-3">
+                                      <div class="">
+                                        <h5 class="card-title">اسم المسابقة</h5>
+                                        <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                        <p class="card-text"><small class="text-body-secondary">تصنيف/نوع السابقة</small></p>
+                                      </div>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center col-6 text-end">
+                                            <div class="d-flex gap-2 justify-content-end">
+                                                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-check">بدء</a>
+                                                <a href="#" class="btn btn-primary">مشاركة</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-between card-body d-grid h-100 p-3">
+                                      <div class="">
+                                        <h5 class="card-title">اسم المسابقة</h5>
+                                        <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                        <p class="card-text"><small class="text-body-secondary">تصنيف/نوع السابقة</small></p>
+                                      </div>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center col-6 text-end">
+                                            <div class="d-flex gap-2 justify-content-end">
+                                                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-check">بدء</a>
+                                                <a href="#" class="btn btn-primary">مشاركة</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-between card-body d-grid h-100 p-3">
+                                      <div class="">
+                                        <h5 class="card-title">اسم المسابقة</h5>
+                                        <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                        <p class="card-text"><small class="text-body-secondary">تصنيف/نوع السابقة</small></p>
+                                      </div>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                                <span class="badge bg-body-secondary px-3 py-2">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center col-6 text-end">
+                                            <div class="d-flex gap-2 justify-content-end">
+                                                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-check">بدء</a>
+                                                <a href="#" class="btn btn-primary">مشاركة</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="h-sm-90vh h-md-30vh align-content-center d-grid position-relative">
+            <div class="container h-full z-1">
+                <div class="align-items-center d-flex flex-row justify-content-between mb-3">
+                    <h1 class="m-0">الإستبيانات</h1>
+                    <a href="#" class="link-secondary">المزيد</a>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper swiper-2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-end card-body d-grid h-100 p-3">
+                                      <h5 class="card-title">اسم الإستبيان</h5>
+                                      <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <a href="#" class="btn">بدء</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-end card-body d-grid h-100 p-3">
+                                      <h5 class="card-title">اسم الإستبيان</h5>
+                                      <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <a href="#" class="btn">بدء</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card mb-3 rounded-0 shadow-sm">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://i1.sndcdn.com/artworks-000578406500-630991-t500x500.jpg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="align-content-end card-body d-grid h-100 p-3">
+                                      <h5 class="card-title">اسم الإستبيان</h5>
+                                      <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</p>
+                                      <div class="row">
+                                        <div class="align-self-center col-6 text-start">
+                                            <div class="d-flex gap-2 justify-content-start">
+                                                <a href="#" class="btn">بدء</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="h-30vh align-content-center d-grid position-relative">
+          <div class="container h-full z-1">
+              <h1 class="mb-3">الصفحات</h1>
+              <!-- Slider main container -->
+              <div class="swiper swiper-1">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                          <a href="#" class="card">
+                              <div class="card-body p-2 p-md-4 text-center">
+                                  <h3 class="m-0">صفحة</h3>
+                              </div>
+                          </a>
+                      </div>
+
+                  </div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  
+              </div>
+          </div>
+      </section>
+
+        <section id="" class="h-30vh align-content-center bg-primary d-grid position-relative">
+            <div class="container h-full z-1">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="text-white">رأيك يهمنا</h1>
+                        <p class="text-white">يمكنك المشارك في الاستبيانات الخاصة بالموقع.</p>
+                    </div>
+                    <div class="align-self-md-center col-12 col-md-6 text-end">
+                        <div class="d-grid d-md-block">
+                            <a href="#" class="btn bg-white text-primary border-0 w50">مشاركة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-print-none footer footer-transparent py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3>اسم الموقع</h3>
+                    <p>نبذة عن الموقع: هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربي.</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3>روابط</h3>
+                    <ul class="list-unstyled text-decoration-none">
+                        <li><a href="index.html" class="link-secondary">الرئيسية</a></li>
+                        <li><a href="single-page.html" class="link-secondary">صفحة</a></li>
+                        <li><a href="single-page.html" class="link-secondary">صفحة</a></li>
+                        <li><a href="single-page.html" class="link-secondary">صفحة</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h3>تواصل معنا</h3>
+                    <ul class="list-unstyled text-decoration-none">
+                        <li>
+                            <a href="tel:0123456789" class="link-secondary">
+                                <i class="ti ti-device-mobile"></i>
+                                <span>0123456789</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@domain.com" class="link-secondary">
+                                <i class="ti ti-mail"></i>
+                                <span>info@domain.com</span>
+                            </a>
+                        </li>
+                        <div class="mt-3">
+                            <ul class="d-flex flex-nowrap flex-row list-unstyled text-decoration-none">
+                                <li class="me-1">
+                                    <a href="#" class="link-secondary">
+                                        <i class="ti ti-brand-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="me-1">
+                                    <a href="#" class="link-secondary">
+                                        <i class="ti ti-brand-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="me-1">
+                                    <a href="#" class="link-secondary">
+                                        <i class="ti ti-brand-x"></i>
+                                    </a>
+                                </li>
+                                <li class="me-1">
+                                    <a href="#" class="link-secondary">
+                                        <i class="ti ti-brand-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <span class="font-500 list-inline-item"><a href="#" class="link-secondary">اسم الموقع</a> 2024 &copy; . حقوق النشر محفوظة</span>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <span class="font-500 list-inline-item">صمم بواسطة <a href="https://jadir.sa" class="link-secondary">جدير</a></span>
+                </div>
+            </div>
+        </div>   
+    </footer>
+
+    <div class="modal modal-blur fade" id="modal-report" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+
+            <form action="">
+
+              <div class="card-header">
+                <ul class="nav nav-tabs bg-transparent card-header-tabs justify-content-center p-3" data-bs-toggle="tabs">
+                  <li class="nav-item">
+                    <a href="#tabs-home-ex1" class="p-3 active" data-bs-toggle="tab">دخول</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#tabs-profile-ex1" class="p-3" data-bs-toggle="tab">تسجيل جديد</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane active show" id="tabs-home-ex1">
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">البريد الإلكتروني</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" autocomplete="off" />
+                    </div>
+            
+                    <div class="mb-3">
+                      <label class="form-label">كلمة المرور</label>
+                      <div class="input-group input-group-flat">
+                        <input type="password" class="form-control" placeholder="كلمة المرور" autocomplete="off" />
+                        <span class="input-group-text">
+                          <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <span class="form-label-description">
+                      <a href="./forgot-password.html">نسيت كلمة المرور</a>
+                    </span>
+          
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">تذكرني</label>
+                    </div>
+          
+                    <div class="d-grid">
+                      <!-- <input type="submit" class="btn btn-primary" value="تسجيل دخول"> -->
+                      <a href="user-account.html" class="btn btn-primary">تسجيل دخول</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane" id="tabs-profile-ex1">
+                    
+                    <div class="row mb-3">
+                      <div class="col-12 col-md-6">
+                        <label class="form-label required">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label class="form-label required">رقم الهاتف</label>
+                        <input type="number" name="input-mask" class="form-control" data-mask="(966) 0000-0000" data-mask-visible="true" placeholder="(966) 0000-0000" autocomplete="off" />
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <div class="col-12 col-md-6">
+                        <label class="form-label required">كلمة المرور</label>
+                        <div class="input-group input-group-flat">
+                          <input type="password" class="form-control" placeholder="كلمة المرور" autocomplete="off" />
+                          <span class="input-group-text">
+                            <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label class="form-label required">تأكيد كلمة المرور</label>
+                        <div class="input-group input-group-flat">
+                          <input type="password" class="form-control" placeholder="تأكيد كلمة المرور" autocomplete="off" />
+                          <span class="input-group-text">
+                            <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-grid">
+                      <input type="submit" class="btn btn-primary" value="تسجيل جديد">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-check" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h3 class="mb-1">تحقق</h3>
+            <div class="mb-2">
+              <label class="form-label">الاسم</label>
+              <input type="email" class="form-control" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">البريد الإلكتروني</label>
+              <input type="email" class="form-control" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">رقم الهاتف</label>
+              <input type="number" name="input-mask" class="form-control" data-mask="(966) 0000-0000" data-mask-visible="true" placeholder="(966) 0000-0000" autocomplete="off" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label required">المجموعة</label>
+              <select class="form-select">
+                <option value="1">رجال</option>
+                <option value="2">نساء</option>
+              </select>
+            </div>
+            <div class="d-grid">
+              <!-- <input type="submit" class="btn btn-primary" value="تحقق"> -->
+              <a href="competition-body.html" class="btn btn-primary">تحقق</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabler Core -->
+    <script src="src/js/tabler.js"></script>
+    <!-- Libs JS -->
+    <script src="src/js/custom.js"></script>
+    <script src="src/js/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper.js"></script>
+</body>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تخصيص الخطوط</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css">
+    <link href="src/css/dropzone.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/datatables.min.css">
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-social.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-payments.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-vendors.rtl.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/font.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Sidebar -->
+    <aside class="navbar navbar-vertical navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand navbar-brand-autodark">
+          <a class="d-md-none d-block" href="dashboard.html">
+            <img src="src/img/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+          </a>
+          <div class="px-3 w-100 d-md-block d-none">
+            <a href="appearance.html" class="btn btn-primary">
+              <span>عودة</span>
+            </a>
+          </div>
+        </h1>
+        <div class="navbar-nav flex-row d-lg-none">
+          <div class="d-none d-lg-flex">
+            <div class="nav-item dropdown d-none d-md-flex me-3">
+              <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                <span class="badge bg-red"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          <div class="p-3">
+            <h2 class="mb-3">تخصيص الخطوط</h2>
+            <div class="mb-2">
+              <label class="form-label">خط العناوين</label>
+              <select class="form-select">
+                <option value="1">خط القاهرة</option>
+                <option value="2">خط تجوال</option>
+                <option value="3">خط درويد كوفي</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label class="form-label">خط الفقرات</label>
+              <select class="form-select">
+                <option value="1">خط القاهرة</option>
+                <option value="2">خط تجوال</option>
+                <option value="3">خط درويد كوفي</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-md d-none d-lg-flex d-print-none shadow-sm" >
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="flex-row order-md-first me-auto">
+          <a href="dashboard.html" class="btn btn-primary">
+            <span>لوحة التحكم</span>
+          </a>
+          <a href="custom-color.html" class="btn btn-primary">
+            <span>الألوان</span>
+          </a>
+          <a href="custom-font.html" class="btn btn-primary">
+            <span>الخطوط</span>
+          </a>
+          <a href="/vendor/index.html" class="btn btn-primary">
+            <span class="me-1">معاينة الموقع</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+          </a>
+        </div>
+        <div class="flex-row order-md-last ms-auto">
+          <a href="" class="btn">
+            <span>إلغاء التعديلات</span>
+          </a>
+          <a href="" class="btn btn-success">
+            <span>حفظ التعديلات</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <div class="page-wrapper">
+        <!-- Page body -->
+        <div class="page-body">
+            <div class="container-xl">
+                <div class="row row-deck row-cards mb-3">
+                    <div class="col-12">
+                      <div class="card">
+                        <iframe src="vendor/index.html" style="height: 100vh;"> </iframe>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer footer-transparent d-print-none">
+            <div class="container-xl">
+                <div class="row text-center align-items-center flex-row-reverse">
+                    <div class="col-lg-auto ms-lg-auto">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">سياسة الخصوصية</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">الشروط والأحكام</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">اتصل بنا</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item">
+                        جميع الحقوق محفوظة
+                        <a href="https://jadir.sa" class="link-secondary">منصة جدير</a>
+                        2023 &copy;
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+  <!-- Libs JS -->
+  <script src="src/js/dropzone-min.js"></script>
+  <script src="src/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
+  <!-- Tabler Core -->
+  <script src="src/js/tabler.min.js" defer></script>
+  <script src="src/js/demo.min.js" defer></script>
+</body>

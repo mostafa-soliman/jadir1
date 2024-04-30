@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المظهر</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css">
+    <link href="src/css/dropzone.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/datatables.min.css">
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-social.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-payments.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-vendors.rtl.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/font.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Sidebar -->
+    <aside class="navbar navbar-vertical navbar-expand-lg scroll">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand navbar-brand-autodark">
+          <a class="d-md-none d-block" href="dashboard.html">
+            <img src="src/img/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+          </a>
+          <div class="px-3 w-100 d-md-block d-none">
+            <a href="appearance.html" class="btn btn-primary">
+              <span>عودة</span>
+            </a>
+          </div>
+        </h1>
+        <div class="navbar-nav flex-row d-lg-none">
+          <div class="d-none d-lg-flex">
+            <div class="nav-item dropdown d-none d-md-flex me-3">
+              <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                <span class="badge bg-red"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          <div class="p-3">
+            <h2 class="mb-1">إعدادات عامة</h2>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار قسم الخدمات اليومية</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <hr class="my-3">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر القرآن الكريم</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر أوقات الصلاة</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر تبرع</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر التقويم الهجري</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر الأذكار</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <p class="m-0">إظهار زر نقاط توزيع زمزم</p>
+              <label class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" checked="">
+              </label>
+            </div>
+          </div>
+          <div class="p-3">
+            <div class="mb-3">
+              <h2 class="mb-3">الهيدر</h2>
+              <div class="mb-3">
+                <label class="form-label mb-3">صورة الهيدر</label>
+                <div class="dropzone" id="dropzone-custom" action="." autocomplete="off" novalidate>
+                  <div class="fallback">
+                    <input name="file" type="file" />
+                  </div>
+                  <div class="dz-message">
+                    <h3 class="dropzone-msg-title">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 9l5 -5l5 5" /><path d="M12 4l0 12" /></svg>
+                    </h3>
+                    <span class="dropzone-msg-desc">اسحب وأسقط الصورة هنا، أو انقر فوق إضافة الصورة</span>
+                  </div>
+                </div> 
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">العنوان</label>
+                <input type="text" class="form-control" value="عنوان تسويقي" name="" placeholder="عنوان القسم">
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">الوصف</label>
+                <textarea class="form-control" name="" id="" placeholder="الوصف">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">عنوان الزر</label>
+                <input type="text" class="form-control mb-2" name="" placeholder="عنوان الزر">
+                <label class="form-label mb-3">رابط الزر</label>
+                <input type="url" class="form-control mb-2" value="https://sub.jadir.co" name="" placeholder="رابط الزر">
+              </div>
+            </div>
+            <hr>
+            <div class="mb-3">
+              <h2 class="mb-1">رأيك يهمنا</h2>
+              <div class="d-flex justify-content-between mb-2">
+                <p class="m-0">إظهار القسم</p>
+                <label class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" checked="">
+                </label>
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">العنوان</label>
+                <input type="text" class="form-control" value="رأيك يهمنا" name="" placeholder="عنوان القسم">
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">الوصف</label>
+                <textarea class="form-control" name="" id="" placeholder="الوصف">يمكنك المشارك في الاستبيانات الخاصة بالموقع.</textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label mb-3">عنوان الزر</label>
+                <input type="text" class="form-control mb-2" name="" placeholder="عنوان الزر">
+                <label class="form-label mb-3">رابط الزر</label>
+                <input type="url" class="form-control mb-2" value="https://sub.jadir.co" name="" placeholder="رابط الزر">
+              </div>
+            </div>
+
+            <h2 class="mb-2">التواصل الإجتماعي</h2>
+            <div class="mb-2">
+              <label class="form-label">فيسبوك</label>
+              <input type="text" class="form-control" name="facebook-url" placeholder="فيسبوك">
+            </div>
+            <div class="mb-2">
+              <label class="form-label">انستغرام</label>
+              <input type="text" class="form-control" name="example-text-input" placeholder="انستغرام">
+            </div>
+            <div class="mb-2">
+              <label class="form-label">تويتر</label>
+              <input type="text" class="form-control" name="example-text-input" placeholder="تويتر">
+            </div>
+            <div class="mb-2">
+              <label class="form-label">واتساب</label>
+              <input type="text" class="form-control" name="example-text-input" placeholder="واتساب">
+            </div>
+            <div class="mb-2">
+              <label class="form-label">سناب شات</label>
+              <input type="text" class="form-control" name="example-text-input" placeholder="سناب شات">
+            </div>
+            <div class="mb-2">
+              <label class="form-label">تيكتوك</label>
+              <input type="text" class="form-control" name="example-text-input" placeholder="تيكتوك">
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-md d-none d-lg-flex d-print-none shadow-sm" >
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="flex-row order-md-first me-auto">
+          <a href="dashboard.html" class="btn btn-primary">
+            <span>لوحة التحكم</span>
+          </a>
+          <a href="custom-color.html" class="btn btn-primary">
+            <span>الألوان</span>
+          </a>
+          <a href="custom-font.html" class="btn btn-primary">
+            <span>الخطوط</span>
+          </a>
+          <a href="/vendor/index.html" class="btn btn-primary">
+            <span class="me-1">معاينة الموقع</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+          </a>
+        </div>
+        <div class="flex-row order-md-last ms-auto">
+          <a href="" class="btn">
+            <span>إلغاء التعديلات</span>
+          </a>
+          <a href="" class="btn btn-success">
+            <span>حفظ التعديلات</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <div class="page-wrapper">
+        <!-- Page body -->
+        <div class="page-body">
+            <div class="container-xl">
+                <div class="row row-deck row-cards mb-3">
+                    <div class="col-12">
+                      <div class="card">
+                        <iframe src="vendor/index.html" style="height: 100vh;"> </iframe>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer footer-transparent d-print-none">
+            <div class="container-xl">
+                <div class="row text-center align-items-center flex-row-reverse">
+                    <div class="col-lg-auto ms-lg-auto">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">سياسة الخصوصية</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">الشروط والأحكام</a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">اتصل بنا</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item">
+                        جميع الحقوق محفوظة
+                        <a href="https://jadir.sa" class="link-secondary">منصة جدير</a>
+                        2023 &copy;
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        new Dropzone("#dropzone-custom")
+      })
+    </script>
+
+  <!-- Libs JS -->
+  <script src="src/js/dropzone-min.js"></script>
+  <script src="src/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
+  <!-- Tabler Core -->
+  <script src="src/js/tabler.min.js" defer></script>
+  <script src="src/js/demo.min.js" defer></script>
+</body>
+</html>

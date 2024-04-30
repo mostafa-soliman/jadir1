@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css" />
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-social.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-payments.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-vendors.rtl.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/font.css">
+</head>
+<body class="d-flex flex-column bg-white">
+  <div class="row g-0 flex-fill">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+      <div class="container container-tight my-5 px-md-5">
+        <div class="d-block d-md-none text-center mb-6">
+          <img src="src/img/logo.svg" class="w-50" alt="Jadir">
+        </div>
+        <form action="login.html" method="post" class="w-md-75" id="loginForm">
+          <div class="row">
+            <div class="col text-start">
+              <h2 class="fw-bold">إنشاء حساب جديد</h2>
+            </div>
+            <div class="col text-end">
+              <a href="#" class="text-decoration-none fw-bold">
+                <span>ENG</span>
+                <i class="ti ti-world"></i>
+              </a>
+            </div>
+            <p>احصل على تجربة مجانية لمدة 5 أيام، بدون بطاقة بنكية أو مصاريف خفية</p>
+          </div>
+
+          <!-- Circles which indicates the steps of the form: -->
+          <ul class="steps steps-primary steps-counter my-4">
+            <li class="step-item active">معلومات الحساب</li>
+            <li class="step-item">اختيار الفئة</li>
+            <li class="step-item">معلومات الموقع</li>
+          </ul>
+
+          <div class="tab">
+            <div class="mb-3">
+              <label for="owner-name" class="form-label required">الاسم</label>
+              <input type="name" class="form-control shadow-sm" id="owner-name" placeholder="ادخل الاسم الثلاثي" autocomplete="off" />
+            </div>
+  
+            <div class="row mb-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label required">البريد الإلكتروني</label>
+                <input type="email" class="form-control shadow-sm" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label required">رقم الهاتف</label>
+                <input type="number" name="input-mask" class="form-control shadow-sm" data-mask="(966) 0000-0000" data-mask-visible="true" placeholder="(966) 0000-0000" autocomplete="off" />
+              </div>
+            </div>
+  
+            <div class="row mb-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label required">كلمة المرور</label>
+                <div class="input-group input-group-flat shadow-sm">
+                  <input type="password" class="form-control" placeholder="كلمة المرور" autocomplete="off" />
+                  <span class="input-group-text">
+                    <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label required">تأكيد كلمة المرور</label>
+                <div class="input-group input-group-flat shadow-sm">
+                  <input type="password" class="form-control" placeholder="تأكيد كلمة المرور" autocomplete="off" />
+                  <span class="input-group-text">
+                    <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div class="row mb-3">
+              <label class="form-label required">اختر الفئة</label>
+              <div class="form-selectgroup">
+                <label class="form-selectgroup-item shadow-sm">
+                  <input type="radio" name="name" value="schools-and-universities" class="form-selectgroup-input" checked />
+                  <span class="form-selectgroup-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
+                    <span>المدارس والجامعات</span>
+                  </span>
+                </label>
+                <label class="form-selectgroup-item shadow-sm">
+                  <input type="radio" name="name" value="memorization-sessions" class="form-selectgroup-input" />
+                  <span class="form-selectgroup-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                    <span>حلقات التحفيظ</span>
+                  </span>
+                </label>
+                <label class="form-selectgroup-item shadow-sm">
+                  <input type="radio" name="name" value="training-institutes" class="form-selectgroup-input" />
+                  <span class="form-selectgroup-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trending-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg>
+                    <span>معاهد التدريب</span>
+                  </span>
+                </label>
+                <label class="form-selectgroup-item shadow-sm">
+                  <input type="radio" name="name" value="companies-and-institutions" class="form-selectgroup-input" />
+                  <span class="form-selectgroup-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-community" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" /><path d="M13 7l0 .01" /><path d="M17 7l0 .01" /><path d="M17 11l0 .01" /><path d="M17 15l0 .01" /></svg>
+                    <span>شركات ومؤسسات</span>
+                  </span>
+                </label>
+                <label class="form-selectgroup-item shadow-sm">
+                  <input type="radio" name="name" value="various-competitions" class="form-selectgroup-input" />
+                  <span class="form-selectgroup-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0" /><path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889" /><path d="M6.802 12l-3.4 5.89l3.598 -.233l1.598 3.232l3.4 -5.889" /></svg>
+                    <span>مسابقات متنوعة</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div class="mb-3">
+              <label for="web-name" class="form-label required">اسم الموقع</label>
+              <input type="name" class="form-control shadow-sm" id="web-name" placeholder="ادخل اسم الموقع" autocomplete="off" />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label required">رابط الموقع</label>
+              <div class="input-group shadow-sm">
+                <span dir="ltr" class="input-group-text">
+                  .jadir.co
+                </span>
+                <input type="text" class="form-control" placeholder="subdomain" autocomplete="off" />
+              </div>
+              <small class="form-hint">يمكنك تغيير هذا الرابط وإنشاء نطاق مخصص بعد عملية إنشاء الحساب في أي وقت</small>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label required" for="flexCheckDefault">أوافق على <a href="#">الشروط وسياسة الخصوصية</a>.</label>
+            </div>
+          </div>
+
+          <div class="d-block g-2">
+            <button class="btn" type="button" id="prevBtn" onclick="nextPrev(-1)">رجوع</button>
+            <button class="btn btn-primary" type="button" id="nextBtn" onclick="nextPrev(1)">متابعة</button>
+          </div>
+
+          <div class="text-center text-muted mt-3">
+            لديك حساب مسبق؟ <a href="login.html" tabindex="-1">تسجيل دخول</a>
+          </div>
+  
+        </form>
+
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-none d-md-flex flex-column justify-content-center bg-cover bg-primary">
+      <div class="container container-tight text-center my-5 px-md-5">
+        <img src="src/img/light-logo.svg" class="w-75" alt="Jadir">
+      </div>
+    </div>
+  </div>
+    
+  <script src="src/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/registrationsteps.js"></script>
+</body>

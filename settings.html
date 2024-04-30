@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإعدادات</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/tabler-icons.min.css">
+    <link href="src/css/dropzone.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/highlight.css">
+    <link rel="stylesheet" href="src/css/datatables.min.css">
+    <link rel="stylesheet" href="src/css/tabler.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-social.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-payments.rtl.css">
+    <link rel="stylesheet" href="src/css/tabler-vendors.rtl.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <link rel="stylesheet" href="src/css/font.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Sidebar -->
+    <aside class="navbar navbar-vertical navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand navbar-brand-autodark">
+          <a href="dashboard.html">
+            <img src="src/img/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+          </a>
+        </h1>
+        <div class="d-grid px-3">
+          <div class="btn justify-content-start">الباقه الحالية: تأسيس</div>
+        </div>
+        <div class="navbar-nav flex-row d-lg-none">
+          <div class="d-none d-lg-flex">
+            <div class="nav-item dropdown d-none d-md-flex me-3">
+              <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                <span class="badge bg-red"></span>
+              </a>
+              <div class="nav-item dropdown d-none d-md-flex">
+                <a href="#" class="nav-link px-0 me-1" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                  <!-- <span class="badge bg-red"></span> -->
+                </a>
+                <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">الرسائل</h3>
+                    </div>
+                    <div class="list-group list-group-flush list-group-hoverable">
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col-auto"><span class="status-dot status-dot-animated bg-red d-block"></span></div>
+                          <div class="col text-truncate">
+                            <a href="#" class="text-body d-block">رسالة 1</a>
+                            <div class="d-block text-muted text-truncate mt-n1">
+                              تحديثات جديده احدثتها منصة جدير في موقعك
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <a href="#" class="list-group-item-actions">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">تنبيهات</h3>
+                  </div>
+                  <div class="list-group list-group-flush list-group-hoverable">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto"><span class="status-dot status-dot-animated bg-red d-block"></span></div>
+                        <div class="col text-truncate">
+                          <a href="#" class="text-body d-block">نموذج 1</a>
+                          <div class="d-block text-muted text-truncate mt-n1">
+                            تحديثات جديده احدثتها منصة جدير في موقعك
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="#" class="list-group-item-actions">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+              <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+              <div class="d-none d-xl-block ps-2">
+                <div>محمد الزاكي</div>
+                <div class="mt-1 small text-muted">مدير</div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <a href="account.html" class="dropdown-item">الحساب</a>
+              <a href="settings.html#tabs-text-ex3" class="dropdown-item">الباقات</a>
+              <a href="settings.html" class="dropdown-item">الإعدادات</a>
+              <a href="login.html" class="dropdown-item text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                <span>تسجيل خروج</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          <ul class="navbar-nav p-3">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 7l6 0" /><path d="M17 4l0 6" /></svg>                </span>
+                <span class="nav-link-title">
+                  الرئيسية
+                </span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg>
+                </span>
+                <span class="nav-link-title">
+                  المحتوى
+                </span>
+              </a>
+              <div class="dropdown-menu">
+                <ul class="dropdown-menu-columns">
+                  <li class="dropdown-menu-column">
+                    <a class="dropdown-item" href="competitions.html">
+                      مسابقات
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-column">
+                    <a class="dropdown-item" href="questionnaires.html">
+                      استبيانات
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages.html" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /></svg>                </span>
+                <span class="nav-link-title">
+                  الصفحات
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="userdatabase.html" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                </span>
+                <span class="nav-link-title">قاعدة البيانات</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appearance.html" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>
+                </span>
+                <span class="nav-link-title">
+                  المظهر
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="settings.html" >
+                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+                </span>
+                <span class="nav-link-title">
+                  الإعدادات
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-md d-none d-lg-flex d-print-none shadow-sm" >
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav flex-row order-md-last ms-auto">
+          <div class="d-none d-md-flex">
+            <a href="#" class="nav-link px-0 me-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="مشاركة الموقع">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+            </a>
+            <a href="vendor/index.html" class="nav-link px-0 me-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="مشاهدة الموقع">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+            </a>
+            <div class="nav-item dropdown d-none d-md-flex">
+              <a href="#" class="nav-link px-0 me-1" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 9h8" /><path d="M8 13h6" /><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /></svg>
+                <!-- <span class="badge bg-red"></span> -->
+              </a>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">الرسائل</h3>
+                  </div>
+                  <div class="list-group list-group-flush list-group-hoverable">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto"><span class="status-dot status-dot-animated bg-red d-block"></span></div>
+                        <div class="col text-truncate">
+                          <a href="#" class="text-body d-block">رسالة 1</a>
+                          <div class="d-block text-muted text-truncate mt-n1">
+                            تحديثات جديده احدثتها منصة جدير في موقعك
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="#" class="list-group-item-actions">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item dropdown d-none d-md-flex">
+              <a href="#" class="nav-link px-0 me-1" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                <span class="badge bg-red"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">تنبيهات</h3>
+                  </div>
+                  <div class="list-group list-group-flush list-group-hoverable">
+                    <div class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto"><span class="status-dot status-dot-animated bg-red d-block"></span></div>
+                        <div class="col text-truncate">
+                          <a href="#" class="text-body d-block">نموذج 1</a>
+                          <div class="d-block text-muted text-truncate mt-n1">
+                            تحديثات جديده احدثتها منصة جدير في موقعك
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="#" class="list-group-item-actions">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon text-muted" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+              <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+              <div class="d-none d-xl-block ps-2">
+                <div>محمد الزاكي</div>
+                <div class="mt-1 small text-muted">مدير</div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <a href="account.html" class="dropdown-item">الحساب</a>
+              <a href="settings.html#tabs-text-ex3" class="dropdown-item">الباقات</a>
+              <a href="settings.html" class="dropdown-item">الإعدادات</a>
+              <a href="login.html" class="dropdown-item text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                <span>تسجيل خروج</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu" style="display: none !important;">
+          <div>
+            <form action="./" method="get" autocomplete="off" novalidate>
+              <div class="input-icon">
+                <span class="input-icon-addon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                </span>
+                <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-wrapper">
+      <!-- Page header -->
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <!-- Page pre-title -->
+              <h2 class="page-title mb-2">
+                لوحة الإدارة
+              </h2>
+              <ol class="breadcrumb" aria-label="breadcrumbs">
+                <li class="breadcrumb-item"><a href="dashboard.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active"><a href="#">الإعدادات</a></li>
+              </ol>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page body -->
+      <div class="page-body">
+        <div class="container-xl">
+          <div class="row row-deck row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="border-bottom-0 card-header">
+                      <ul class="bg-white border-bottom-0 card-header-tabs nav nav-tabs pt-3" data-bs-toggle="tabs">
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                            <a href="#tabs-home-ex1" class="nav-link border-0 active" data-bs-toggle="tab">الإعدادات العامة</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex2" class="nav-link border-0" data-bs-toggle="tab">إعدادات التسجيل</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex3" class="nav-link border-0" data-bs-toggle="tab">إعدادات النطاق</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex4" class="nav-link border-0" data-bs-toggle="tab">باقات الموقع</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex5" class="nav-link border-0" data-bs-toggle="tab">أكواد مخصصة</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex6" class="nav-link border-0" data-bs-toggle="tab">تصميم الشهادات</a>
+                        </li>
+                        <li class="btn h-100 me-2 mb-2 nav-item p-0">
+                          <a href="#tabs-text-ex7" class="nav-link border-0" data-bs-toggle="tab">إدارة المستخدمين</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="tab-content">
+                        <div class="tab-pane active show" id="tabs-home-ex1">
+                            <h2 class="m-0">الإعدادات العامة</h2>
+                            <p class="mb-3">ضبط الإعدادات وتحديد الاسم، البريد الإلكتروني الأساسي وبريد خدمة الدعم الخاص بموقعك.</p>
+                            <div class="row row-cards">
+                                <div class="col-12 col-md-8">
+                                    <div class="card-body px-0 py-0">
+                                        <div class="mb-2">
+                                            <label class="form-label">اسم الموقع</label>
+                                            <input type="text" class="form-control" name="example-text-input" value="موقع جدير" placeholder="ادخل اسم الموقع">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label">رقم الهاتف</label>
+                                            <input type="number" name="input-mask" class="form-control" data-mask="(966) 0000-0000" data-mask-visible="true" placeholder="(966) 0000-0000" autocomplete="off" />
+                                            <small class="form-hint">يظهر هذا الرقم على موقعك.</small>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label">البريد الإلكتروني الخاص بموقعك</label>
+                                            <input type="email" class="form-control" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+                                            <small class="form-hint">نرسل التنبيهات المتعلقة بموقعك عبر هذا البريد.</small>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label">بريد خدمة الدعم</label>
+                                            <input type="email" class="form-control" aria-describedby="email" placeholder="name@example.com" autocomplete="off" />
+                                            <small class="form-hint">يمكن للمتسابقين التواصل معك عبر هذا البريد.</small>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label">نبذة عن موقعك</label>
+                                            <textarea class="form-control" rows="5" placeholder="اكتب نبذة عن موقعك .."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                  <div class="">
+                                    <h2 class="mb-1">إتاحة الموقع</h2>
+                                    <div class="d-flex justify-content-between mb-2">
+                                      <p class="m-0">إتاح موقعك للجميع</p>
+                                      <label class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox">
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="mb-4">
+                                    <label class="form-label mb-3">شعار الموقع</label>
+                                    <div class="dropzone" id="dropzone-custom" action="." autocomplete="off" novalidate>
+                                      <div class="fallback">
+                                        <input name="file" type="file" />
+                                      </div>
+                                      <div class="dz-message">
+                                        <h3 class="dropzone-msg-title">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 9l5 -5l5 5" /><path d="M12 4l0 12" /></svg>
+                                        </h3>
+                                        <span class="dropzone-msg-desc">اسحب وأسقط الصورة هنا، أو انقر فوق إضافة الصورة</span>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="mb-4">
+                                    <label class="form-label">أيقونة الموقع</label>
+                                    <small class="form-hint mb-3">تظهر في علامات تبويب المتصفح وأشرطة الإشارات المرجعية.</small>
+                                    <div class="dropzone" id="dropzone-custom-2" action="." autocomplete="off" novalidate>
+                                      <div class="fallback">
+                                        <input name="file" type="file" />
+                                      </div>
+                                      <div class="dz-message">
+                                        <h3 class="dropzone-msg-title">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 9l5 -5l5 5" /><path d="M12 4l0 12" /></svg>
+                                        </h3>
+                                        <span class="dropzone-msg-desc">اسحب وأسقط الصورة هنا، أو انقر فوق إضافة الصورة</span>
+                                      </div>
+                                    </div> 
+                                  </div>
+                                  <div class="row mb-2">
+                                    <div class="col d-grid">
+                                      <button class="btn" type="button">إلغاء التعديلات</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                      <button class="btn btn-primary" type="button">حفظ التعديلات</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex2">
+                          <h2 class="m-0">إعدادات السجيل</h2>
+                          <p class="mb-3">يمكنك اضافة وتعديل حقول التسجيل الخاصة بالمستخدمين.</p>
+
+                          <div class="alert alert-primary">
+                            <label class="form-label required">اختر نوع الحقل</label>
+                            <select class="form-select mb-3">
+                              <option value="1">نص</option>
+                              <option value="2">حقل رقم</option>
+                              <option value="2">تاريخ</option>
+                              <option value="2">رفع مستند</option>
+                            </select>
+                            <div class="d-grid">
+                              <button class="btn btn-primary">اضف</button>
+                            </div>
+                          </div>
+
+                          <div class="card mb-3">
+                            <div class="card-body p-2 p-md-3">
+                              <div class="mb-3">
+                                <label class="form-label required">اسم الحقل</label>
+                                <input type="name" class="form-control" id="" placeholder="ادخل اسم الحقل">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label">وصف الحقل</label>
+                                <textarea name="" class="form-control" id=""></textarea>
+                              </div>
+                              <div class="align-items-center d-flex justify-content-between">
+                                <div class="form-check m-0">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label text-red" for="flexCheckDefault">مطلوب</label>
+                                </div>
+                                <button class="btn btn-danger" type="button">حذف الحقل</button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="d-grid d-md-flex gap-2 justify-content-md-center">
+                            <button class="btn btn-primary" type="button">حفظ الإعدادات</button>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex3">
+                          <h2 class="m-0">إعدادات النطاق</h2>
+                          <p class="mb-3">يمكنك استخدام نطاق مجاني لموقعك، أو إضافة نطاق مخصص إذا كان لديك نطاق بالفعل.</p>
+                          <div></div>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex4">
+                          <h2 class="m-0">باقات الموقع</h2>
+                          <p class="mb-3">يمكنك استخدام نطاق مجاني لموقعك، أو إضافة نطاق مخصص إذا كان لديك نطاق بالفعل.</p>
+                          <div class="card">
+                            <div class="table-responsive">
+                              <table class="table table-vcenter table-bordered table-nowrap card-table">
+                                <thead>
+                                  <tr>
+                                    <td class="w-50">
+                                      <h2 class="mb-2">اختر ما يناسبك من باقتنا</h2>
+                                      <div class="text-secondary text-wrap">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.</div>
+                                    </td>
+                                    <td class="text-center">
+                                      <div class="text-uppercase text-secondary font-weight-medium">تأسيس/سنوي</div>
+                                      <div class="display-6 fw-bold my-3">10 ر.س</div>
+                                      <a href="#" class="btn w-100">اشتراك</a>
+                                    </td>
+                                    <td class="text-center">
+                                      <div class="text-uppercase text-secondary font-weight-medium">احترافي/سنوي</div>
+                                      <div class="display-6 fw-bold my-3">20 ر.س</div>
+                                      <a href="#" class="btn btn-primary w-100">اشتراك</a>
+                                    </td>
+                                    <td class="text-center">
+                                      <div class="text-uppercase text-secondary font-weight-medium">أعمال/سنوي</div>
+                                      <div class="display-6 fw-bold my-3">30 ر.س</div>
+                                      <a href="#" class="btn w-100">اشتراك</a>
+                                    </td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="bg-light">
+                                    <th colspan="4" class="subheader">مميزات</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Some info about feature</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Online payment gateway</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Unlimited products can be sold</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-light">
+                                    <th colspan="4" class="subheader">تقارير</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Free hosting and domain name</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Admin dashboard to control items</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-light">
+                                    <th colspan="4" class="subheader">دعم فني</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Email marketing and service</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>24/7 customer support online</td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-red" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                    <td class="text-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td></td>
+                                    <td>
+                                      <a href="#" class="btn w-100">اشتراك</a>
+                                    </td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary w-100">اشتراك</a>
+                                    </td>
+                                    <td>
+                                      <a href="#" class="btn w-100">اشتراك</a>
+                                    </td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex5">
+                          <h2 class="m-0">أكواد مخصصة</h2>
+                          <p class="mb-3">يمكنك إضافة أكواد مخصصة لموقعك.</p>
+                          <h3 class="mb-3">كود مخصص قبل نهاية وسم head</h3>
+                          <textarea dir="ltr" class="form-control mb-2" name="" id="code-editor" cols="30" rows="15">
+<!--Start of JS code-->
+<script type="text/javascript">
+  //JS code goes here
+</script>
+<!--Start of JS code-->
+
+<!--Start of CSS code-->
+<style>
+ /*CSS code goes here*/
+</style>
+<!--End of CSS code-->
+                          </textarea>
+                          <h3 class="mb-3">كود مخصص قبل نهاية وسم body</h3>
+                          <textarea dir="ltr" class="form-control mb-2" name="" id="code-editor" cols="30" rows="15">
+<!--Start of JS code-->
+<script type="text/javascript">
+  //JS code goes here
+</script>
+<!--Start of JS code-->
+
+<!--Start of CSS code-->
+<style>
+ /*CSS code goes here*/
+</style>
+<!--End of CSS code-->
+                          </textarea>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex6">
+                          <h2 class="m-0">تصميم الشهادات</h2>
+                          <p class="mb-3">يمكنك تصميم الشهادات الخاصة بموقعك.</p>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-text-ex7">
+                          <h2 class="m-0">إدارة المستخدمين</h2>
+                          <p class="mb-3">هذا القسم خاص بمدراء الموقع، يمكنك اضافة/إدارة المستخدمين في هذا القسم</p>
+
+                          <div class="card mb-3">
+                            <div class="card-body p-2 p-md-3">
+                              <h3 class="mb-3">إضافة مستخدم جديد</h3>
+                              <div class="mb-3">
+                                <label class="form-label required">البريد الإلكتروني</label>
+                                <input type="name" class="form-control" id="" placeholder="ادخل ادخل عنوان البريد الإلكتروني الخاص بالمستخدم الجديد">
+                              </div>
+                              
+                              <div class="row mb-3">
+                                <div class="col-12 col-md-6">
+                                  <label class="form-label required">كلمة المرور</label>
+                                  <div class="input-group input-group-flat">
+                                    <input type="password" class="form-control" placeholder="كلمة المرور" autocomplete="off" />
+                                    <span class="input-group-text">
+                                      <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                                      </a>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <label class="form-label required">تأكيد كلمة المرور</label>
+                                  <div class="input-group input-group-flat">
+                                    <input type="password" class="form-control" placeholder="تأكيد كلمة المرور" autocomplete="off" />
+                                    <span class="input-group-text">
+                                      <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="عرض كلمة المرور" data-bs-original-title="عرض كلمة المرور">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path></svg>
+                                      </a>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="align-items-center align-items-md-end d-flex justify-content-between">
+                                <div class="m-0">
+                                  <label class="form-label">تعيين دور</label>
+                                  <select class="form-select">
+                                    <option value="1">كامل الصلاحيات</option>
+                                    <option value="2">محرر مسابقات</option>
+                                  </select>
+                                </div>
+                                <button class="btn btn-primary" type="button">اضف مستخدم</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card mb-3">
+                            <div class="card-body p-2 p-md-3">
+                              <div class="table-responsive">
+                                <table id="myTable" class="table table-striped display w-100">
+                                  <thead>
+                                    <tr>
+                                      <th>اسم المستخدم</th>
+                                      <th>تاريخ التسجيل</th>
+                                      <th>اجراء</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>محمد الزاكي</td>
+                                      <td>25-2-2024</td>
+                                      <td>
+                                        <div class="dropdown">
+                                          <a href="#" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown">خيارات</a>
+                                          <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">تعديل</a>
+                                            <a class="dropdown-item text-red" href="#">حذف</a>
+                                          </div>
+                                        </div>                            
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>                  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer footer-transparent d-print-none">
+        <div class="container-xl">
+          <div class="row text-center align-items-center flex-row-reverse">
+            <div class="col-lg-auto ms-lg-auto">
+              <ul class="list-inline list-inline-dots mb-0">
+                <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">سياسة الخصوصية</a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">الشروط والأحكام</a></li>
+                <li class="list-inline-item"><a href="#" target="_blank" class="link-secondary" rel="noopener">اتصل بنا</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+              <ul class="list-inline list-inline-dots mb-0">
+                <li class="list-inline-item">
+                  جميع الحقوق محفوظة
+                  <a href="https://jadir.sa" class="link-secondary">منصة جدير</a>
+                  2023 &copy;
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new Dropzone("#dropzone-custom")
+    })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new Dropzone("#dropzone-custom-2")
+    })
+  </script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- DataTables -->
+  <script src="src/js/jquery-3.6.0.min.js"></script>
+  <script src="src/js/datatables.min.js"></script>
+  <script src="src/js/pdfmake.min.js"></script>
+  <script src="src/js/vfs_fonts.js"></script>
+  <script src="src/js/custom.js"></script>
+  <!-- Libs JS -->
+  <script src="src/js/dropzone-min.js"></script>
+  <script src="src/js/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="src/js/go.min.js"></script>
+  <script src="src/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world.js" defer></script>
+  <script src="src/libs/jsvectormap/dist/maps/world-merc.js" defer></script>
+  <!-- Tabler Core -->
+  <script src="src/js/tabler.min.js" defer></script>
+  <script src="src/js/demo.min.js" defer></script>
+</body>
